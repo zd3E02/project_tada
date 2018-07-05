@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import "original/bootstrap";
+
+h2 {
+	color: $brand-success;
+	&:hover {
+		color: blue;
+	}
+}
+
+.jumbotron {
+  background: url(http://lorempixel.com/1920/420/technics/1/DummyPhoto);
+}
+.container {
+  padding-top: 60px;
+}
+nav .container {
+  padding-top: 0;
+}
+.jumbotron + .container {
+  padding-top: 20px;
+}
