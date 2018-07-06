@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import "original/bootstrap";
 
+
+$bgDefault      : #43ea56;
+$bgHighlight    : #81f23f;
+$bgBodyDefault  : #fffff0;
+
 h2 {
 	color: $brand-success;
 	&:hover {
@@ -8,8 +13,14 @@ h2 {
 	}
 }
 
+body {
+  background-color: $bgBodyDefault;
+}
+
 .jumbotron {
-  background: url(http://lorempixel.com/1920/420/technics/1/DummyPhoto);
+  background: url(../images/tada_odawara.jpg) center 0 repeat-x;
+  height: 500px;
+  background-size: cover;
 }
 .container {
   padding-top: 60px;
@@ -20,3 +31,121 @@ nav .container {
 .jumbotron + .container {
   padding-top: 20px;
 }
+
+.top-icon {
+line-height: -200;
+}
+
+.top-thumbnail {
+  .col-md-3 {
+    padding: 5px;
+  }
+}
+
+.main-contents{
+  margin: 1px;
+  padding: 10px;
+}
+
+.news-table {
+  th { border: 3px solid gray;}
+  td { border: 2px solid gray;}
+}
+
+.thumbnail {
+  height: 300px;
+  .detail {
+    font-size: 12px;
+    margin-top: 200px;
+    float: right;
+  }
+}
+
+
+// .container {
+//   background-color: green;
+// }
+
+
+.navbar-default {
+background-image: linear-gradient(to bottom,$bgHighlight 0,$bgDefault 100%);
+border-color: $bgHighlight;
+}
+.nav-active {
+  background-color: $bgHighlight;
+}
+
+// .collapse.navbar-collapse {
+// background-color: $bgDefault;
+// border-color: #3e6962;
+// box-sizing: border-box;;
+// }
+
+// $bgDefault      : #43ea56;
+// $bgHighlight    : #81f23f;
+// $colDefault     : #000000;
+// $colHighlight   : #2c4dcc;
+// $dropDown       : false;
+// div.collapse.navbar-collapse{
+//   background-color: $bgDefault;
+//   border-color: $bgHighlight;
+//   .navbar-brand {
+//     color: $colDefault;
+//     &:hover, &:focus {
+//       color: $colHighlight; }}
+//   .navbar-text {
+//     color: $colDefault; }
+//   .navbar-nav {
+//     > li {
+//       > a {
+//         color: $colDefault;
+//         &:hover,  &:focus {
+//           color: $colHighlight; }}
+//       @if $dropDown {
+//         > .dropdown-menu {
+//           background-color: $bgDefault;
+//           > li {
+//             > a {
+//               color: $colDefault;
+//               &:hover,  &:focus {
+//                 color: $colHighlight;
+//                 background-color: $bgHighlight; }}
+//             &.divider {
+//               background-color: $bgHighlight;}}}}}
+//     @if $dropDown {
+//       .open .dropdown-menu > .active {
+//         > a, > a:hover, > a:focus {
+//           color: $colHighlight;
+//           background-color: $bgHighlight; }}}
+//     > .active {
+//       > a, > a:hover, > a:focus {
+//         color: $colHighlight;
+//         background-color: $bgHighlight; }}
+//     > .open {
+//       > a, > a:hover, > a:focus {
+//         color: $colHighlight;
+//         background-color: $bgHighlight; }}}
+//   .navbar-toggle {
+//     border-color: $bgHighlight;
+//     &:hover, &:focus {
+//       background-color: $bgHighlight; }
+//     .icon-bar {
+//       background-color: $colDefault; }}
+//   .navbar-collapse,
+//   .navbar-form {
+//     border-color: $colDefault; }
+//   .navbar-link {
+//     color: $colDefault;
+//     &:hover {
+//       color: $colHighlight; }}}
+// @media (max-width: 767px) {
+//   .navbar-default .navbar-nav .open .dropdown-menu {
+//     > li > a {
+//       color: $colDefault;
+//       &:hover, &:focus {
+//         color: $colHighlight; }}
+//     > .active {
+//       > a, > a:hover, > a:focus {
+//         color: $colHighlight;
+//         background-color: $bgHighlight; }}}
+// }
